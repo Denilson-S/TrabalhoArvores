@@ -1,14 +1,14 @@
 #ifndef TYPE_H
 #define TYPE_H
 
-//criação do tipo nó binário
+//criaÃ§Ã£o do tipo nÃ³ binÃ¡rio
 struct Bin_Node{
 	long long data;
 	Bin_Node* left;
 	Bin_Node* right;
 };
 
-//criação do tipo nó binário AVL
+//criaÃ§Ã£o do tipo nÃ³ binÃ¡rio AVL
 struct AVL_Node {
 	int data;
 	int height;
@@ -16,18 +16,18 @@ struct AVL_Node {
 	AVL_Node* right;
 };
 
-//criação do tipo nó Trie
+//criaÃ§Ã£o do tipo nÃ³ Trie
 struct Trie_Node {
 	Trie_Node* filhos[26];
 	bool end;
 };
 
-//criação do tipo ponteiro para os tipos criados anteriormente
+//criaÃ§Ã£o do tipo ponteiro para os tipos criados anteriormente
 typedef Bin_Node* Bin_Node_Point;
 typedef AVL_Node* AVL_Node_Point;
 typedef Trie_Node* Trie_Node_Point;
 
-//função de criação de nó Trie
+//funÃ§Ã£o de criaÃ§Ã£o de nÃ³ Trie
 Trie_Node_Point Trie_CreateNode() {
 	Trie_Node_Point temp = new Trie_Node;
     temp->end = false;
@@ -37,7 +37,7 @@ Trie_Node_Point Trie_CreateNode() {
     return temp;
 }
 
-//função de criação de nó binário
+//funÃ§Ã£o de criaÃ§Ã£o de nÃ³ binÃ¡rio
 Bin_Node_Point Bin_CreateNode(int valor) {
 	Bin_Node_Point temp = new Bin_Node;
 	temp->data = valor;
@@ -46,7 +46,7 @@ Bin_Node_Point Bin_CreateNode(int valor) {
 
 	return temp;
 }
-//função de criação de nó binário
+//funÃ§Ã£o de criaÃ§Ã£o de nÃ³ binÃ¡rio
 AVL_Node_Point AVL_CreateNode(int valor) {
 	AVL_Node_Point temp = new AVL_Node;
 	temp->data = valor;
@@ -57,4 +57,4 @@ AVL_Node_Point AVL_CreateNode(int valor) {
 	return temp;
 }
 
-#endif // !TYPE_H
+#endif 
