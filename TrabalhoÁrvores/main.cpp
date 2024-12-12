@@ -5,7 +5,7 @@
 #include "BinaryTree.h"
 #include "BinarySearchTree.h"
 #include "AVLTree.h"
-#include "BTree.h"
+//#include "BTree.h"
 #include "HeapTree.h"
 #include "TrieTree.h"
 
@@ -18,20 +18,20 @@ int main()
     Bin_Node_Point Bin_root = nullptr;
     Bin_Node_Point BST_root = nullptr;
     AVL_Node_Point AVL_root = nullptr;
-    AVL_Node_Point Heap_root = nullptr;
+    Heap_Node_Point Heap_root = Heap_CreateNode();
     Trie_Node_Point Trie_root = Trie_CreateNode();
 
     int control = 1;
     while (control) {
         cout << "Qual arvore deseja manipular? " << endl
-             << "Sair:.................0" << endl
-             << "Binaria:..............1" << endl
-             << "Binaria de busca:.....2" << endl
-             << "Arvore AVL:...........3" << endl
-             << "Arvore Heap:..........4" << endl
-             << "Arvore Trie:..........5" << endl
-             << "Arvore B:.............6" << endl << endl
-             << "Arvore: ";
+            << "Sair:.................0" << endl
+            << "Binaria:..............1" << endl
+            << "Binaria de busca:.....2" << endl
+            << "Arvore AVL:...........3" << endl
+            << "Arvore Heap:..........4" << endl
+            << "Arvore Trie:..........5" << endl
+            << "Arvore B:.............6" << endl << endl
+            << "Arvore: ";
 
         if (!(cin >> control)) {
             cin.clear();
